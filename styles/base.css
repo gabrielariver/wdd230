@@ -150,3 +150,96 @@ footer {
     font-size: 0.9rem;
     margin-top: 2rem;
 }
+
+.hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+
+/* mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    background-color: #4A4A4A;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #4d8d96;
+    color: #121212;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.dark-mode main h1 {
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.dark-mode .card li {
+    color: white;
+}
+
+.dark-mode .card a {
+    color: #07BEB8
+}
+
+.dark-mode nav ul li a {
+    color: #FFFFFF;
+}
+
+.dark-mode footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #mainNav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+
+    #mainNav ul.active {
+        display: flex;
+    }
+}
