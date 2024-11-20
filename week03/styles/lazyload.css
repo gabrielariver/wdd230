@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: black;
+    animation: fade 15s;
+}
+
+footer {
+    background-color: #68D8D6;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
