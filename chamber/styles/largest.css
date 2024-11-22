@@ -73,27 +73,6 @@
         color: black;
     }
 
-    .hero-right {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-
-    .hero-right h2 {
-        font-size: 1.8em;
-        font-weight: bold;
-        color: black;
-        margin-bottom: 10px;
-    }
-
-    .hero-right p {
-        font-size: 1em;
-        color: black;
-    }
-
     /* Call to Action */
     .cta-join {
         margin: 40px 0;
@@ -134,4 +113,40 @@
         max-width: 48%;
     }
 
+    /*week 03 - Discover*/
+    /* Sidebar and Main Layout */
+    .discover-page main {
+        grid-template-columns: 1fr 3fr;
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .discover-page .sidebar {
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .discover-page .main-content {
+        font-size: 1.2rem;
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .gallery img {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .gallery .figure {
+        text-align: center;
+    }
 }

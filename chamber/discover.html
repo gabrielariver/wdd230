@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Discover</title>
+    <meta name="description"
+        content="Welcome to the Chamber of Commerce Discover, connecting local events and businesses.">
+    <meta name="author" content="Gabriela Rivera">
+    <meta property="og:title" content="Gabriela Rivera - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Explore the Quito Community Chamber of Commerce, where innovation meets with and for the community. We empower local businesses, foster connections, and drive success through technology.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f8/Quito.jpg">
+    <meta property="og:url" content="https://gabrielariver.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body class="discover-page">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <aside class="sidebar">
+            <h2>About Quito</h2>
+            <p>Quito, officially known as San Francisco de Quito, is the capital of the Republic of Ecuador. It also
+                acts as the capital of the Province of Pichincha and the cantonal nucleus of the Metropolitan District
+                of Quito. Located in the north of the inter-Andean region of Ecuador, in the basin of the Guayllabamba
+                River, on the western slopes of the Pichincha stratovolcano, with an average altitude of 2,850 meters
+                above sea level, it is the constitutional capital with the highest altitude in the world.</p>
+            <p>Population: 2.8 million</p>
+            <p>Language: Spanish</p>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>December 6: Founding of Quito Celebration</li>
+                <li>March 12: Flower Festival</li>
+            </ul>
+            <h3>Top Attractions</h3>
+            <ul>
+                <li>La Basílica del Voto Nacional</li>
+                <li>El Panecillo</li>
+                <li>Mitad del Mundo</li>
+            </ul>
+            <h3>Cultural Agenda </h3>
+            <ul>
+                <li> III Afro-Ecuadorian Festival. Every year the Benjamín Carrión Bellavista Cultural Center pays
+                    tribute to the legacy of the great marimbist Guillermo Ayoví “Papá Roncón” with an Afro-Ecuadorian
+                    festival that celebrates sounds, knowledge and expressions. </li>
+                <li> The Colada Morada Competition. A meeting of local chefs and UDET students, celebrating the culinary
+                    tradition of this emblematic dish and promoting gastronomic
+                    creativity.</li>
+                <li> Guitar ensemble from Quito and Simón Gangotena, 138 years
+                    Teatro Nacional Sucre. Celebrating the classical music concert
+                    in commemoration of the 138 years of theof the 138 years of the
+                    Teatro Nacional Sucre.</li>
+            </ul>
+            <div class="last-visit-message"></div>
+        </aside>
+
+        <!-- Main Gallery-->
+        <section class="main-content">
+            <h2>Local Images</h2>
+            <div class="gallery">
+                <figure class="figure">
+                    <img src="images/el-panecillo.webp" alt="El Panecillo " loading="lazy">
+                    <figcaption>
+                        <h3>El Panecillo</h3>
+                        <p>An iconic viewpoint that gives you impressive views of Quito and its history.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="images/la-basilica.webp" alt="La Basílica del Voto Nacional" loading="lazy">
+                    <figcaption>
+                        <h3>La Basílica</h3>
+                        <p>A neo-Gothic treasure in the heart of Quito, where every corner tells a legend.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="images/la-ronda.webp" alt="Historic Center of Quito" loading="lazy">
+                    <figcaption>
+                        <h3>La Ronda</h3>
+                        <p>A bohemian walk full of art, music and tradition that comes to life at night.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="images/mitad-del-mundo.webp" alt="Mitad del Mundo" loading="lazy">
+                    <figcaption>
+                        <h3>La Mitad del Mundo</h3>
+                        <p>Cross the hemisphere and live the unique experience of being in two worlds at once.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="images/plaza-grande.webp" alt="Quito Plaza Grande" loading="lazy">
+                    <figcaption>
+                        <h3>Plaza Grande</h3>
+                        <p>The soul of Quito, where history, culture and politics intertwine in perfect harmony.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="images/el-cotopaxi.webp" alt="View of Cotopaxi in Quito" loading="lazy">
+                    <figcaption>
+                        <h3>El Cotopaxi</h3>
+                        <p>On a clear day, you can see the snow-capped cone from Quito, but closer exploration requires
+                            a trip to Cotopaxi National Park.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact: <a href="mailto:gabrielariv301@gmail.com">gabrielariv301@gmail.com</a></p>
+        <p>Gabriela Elizabeth Rivera Abad | WDD 230</p>
+        <p>Last modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
