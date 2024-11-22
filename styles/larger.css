@@ -36,7 +36,7 @@
     /*main*/
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        /*grid-template-columns: 2fr 1fr;*/
         gap: 1.5rem;
         max-width: 1200px;
         margin: 0 auto;
@@ -55,6 +55,48 @@
         font-size: 2rem;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
+    }
+
+    /*week 03*/
+    .hero {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .hero h2 {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-overlay {
+        top: 8%;
+        left: 5%;
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /*map*/
+    .map-container iframe {
+        height: 450px;
+    }
+
+    .map-container h2 {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
     }
 
 }

@@ -25,3 +25,14 @@ darkModeToggle.addEventListener('click', () => {
         darkModeToggle.innerHTML = '🌙 Dark Mode';
     }
 });
+
+//Page visit counter
+const visitCountElement = document.getElementById("visitCount");
+let visitCount = localStorage.getItem("visitCount");
+if (!visitCount) {
+    visitCount = 1;
+} else {
+    visitCount = parseInt(visitCount) + 1;
+}
+localStorage.setItem("visitCount", visitCount);
+visitCountElement.textContent = visitCount;
