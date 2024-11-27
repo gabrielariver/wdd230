@@ -44,13 +44,3 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: white;
 }
-
-.checkmark {
-    color: #6a0dad;
-    font-weight: bold;
-}
-
-.cross {
-    color: red;
-    font-weight: bold;
-}
