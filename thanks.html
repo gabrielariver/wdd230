@@ -4,63 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Home</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce, connecting local businesses for success.">
+    <title>Gabriela Rivera - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Gabriela Rivera - My home page">
     <meta name="author" content="Gabriela Rivera">
-    <meta property="og:title" content="Gabriela Rivera - WDD 230 - Chamber of Commerce">
+    <meta property="og:title" content="Gabriela Rivera - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Explore the Quito Community Chamber of Commerce, where innovation meets with and for the community.
-        We empower local businesses, foster connections, and drive success through technology.">
+    <meta property="og:description" content="WDD 230 - Gabriela Rivera's home page for Web Frontend Development.">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f8/Quito.jpg">
-    <meta property="og:url" content="https://gabrielariver.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://gabrielariver.github.io/wdd230/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/custom-normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
-        </div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="https://gabrielariver.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="https://gabrielariver.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
 
-    <!-- Thanks section -->
+    <header>
+        <button id="menuButton" class="hamburger">☰</button>
+        <img src="images/GabrielaR.webp" alt="Gabriela Rivera" width="100" height="125" loading="lazy">
+        <span>Gabriela Elizabeth Rivera</span>
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙 Dark Mode</button>
+    </header>
+    <nav id="mainNav">
+        <ul>
+            <li><a href="https://gabrielariver.github.io/wdd230/#" aria-current="page">Home</a></li>
+            <li><a href="https://gabrielariver.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li><a href="https://gabrielariver.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
     <main>
         <h1>THANK YOU!</h1>
         <p>Your submission has been received. We will review your feedback and get back to you if needed.</p>
         <p><a href="form.html">Go back to the form</a> or return to the <a href="index.html">homepage</a>.</p>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Contact: <a href="mailto:gabrielariv301@gmail.com">gabrielariv301@gmail.com</a></p>
-        <p>Gabriela Elizabeth Rivera Abad | WDD 230</p>
-        <p>Last modification: <span id="last-modified"></span></p>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gabriela Elizabeth Rivera - Quito / Ecuador</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
 
-    <script src="scripts/chamber.js"></script>
 </body>
 
 </html>
