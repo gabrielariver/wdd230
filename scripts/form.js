@@ -9,3 +9,15 @@ document.querySelector("form").addEventListener("submit", function (e) {
         document.getElementById("confirmPassword").value = "";
     }
 });
+
+// email form
+document.getElementById("email").addEventListener("input", function (e) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+    const emailField = e.target;
+
+    if (!emailPattern.test(emailField.value)) {
+        emailField.setCustomValidity("Please enter a valid @byui.edu email address.");
+    } else {
+        emailField.setCustomValidity("");
+    }
+});
