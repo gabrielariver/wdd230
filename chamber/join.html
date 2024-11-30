@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce, connecting local businesses for success.">
+    <meta name="author" content="Gabriela Rivera">
+    <meta property="og:title" content="Gabriela Rivera - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore the Quito Community Chamber of Commerce, where innovation meets with and for the community.
+        We empower local businesses, foster connections, and drive success through technology.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f8/Quito.jpg">
+    <meta property="og:url" content="https://gabrielariver.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- form -->
+        <h1>Join the Quito Chamber of Commerce</h1>
+        <form method="get" action="thankyou.html">
+            <label for="fName">First Name*
+                <input type="text" id="fname" name="fname" required>
+            </label>
+            <label for="lname">Last Name*
+                <input type="text" id="lname" name="lname" required>
+            </label>
+            <label for="title">Title/Position*
+                <input type="text" id="title" name="title" required pattern="[a-zA-Z\s-]{7,}"
+                    title="Title must contain only letters, hyphens, and spaces, with at least 7 characters.">
+            </label>
+            <label for="email">Email Address*
+                <input type="email" id="email" name="email" required placeholder="user@gmail.com">
+            </label>
+            <label for="phone">Mobile Phone*
+                <input type="tel" id="phone" name="phone" required placeholder="0963316103">
+            </label>
+            <label for="organization">Business/Organization Name*
+                <input type="text" id="organization" name="organization" required>
+            </label>
+            <label for="membership">Membership Level*
+                <select id="membership" name="membership" required>
+                    <option value="">-- Select a Membership Level --</option>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">Business/Organization Description
+                <textarea id="description" name="description" rows="4"
+                    placeholder="Describe your organization..."></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li><strong>NP Membership:</strong> Free of charge, this membership is intended to support nonprofit
+                    organizations.</li>
+                <li><strong>Bronze Membership:</strong> Access to networking events, expos, and basic resources.</li>
+                <li><strong>Silver Membership:</strong> Discounts on events, birthday events, training, and featured
+                    advertising for businesses.</li>
+                <li><strong>Gold Membership:</strong> Full benefits, priority advertising, and high-level premium
+                    events.
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact: <a href="mailto:gabrielariv301@gmail.com">gabrielariv301@gmail.com</a></p>
+        <p>Gabriela Elizabeth Rivera Abad | WDD 230</p>
+        <p>Last modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>

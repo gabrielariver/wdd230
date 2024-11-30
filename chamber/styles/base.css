@@ -342,3 +342,112 @@ h1 {
         box-shadow: none;
     }
 }
+
+/*form week 04 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* button */
+form button {
+    padding: 10px 20px;
+    background-color: #00B9B9;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007575;
+    color: white;
+}
+
+/* Benefits section */
+.membership-benefits {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.membership-benefits h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.membership-benefits li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.membership-benefits li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00B9B9;
+}
+
+/*thank you page*/
+.thank-you-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f9f9f9;
+}
+
+/* thanks container*/
+.thank-you-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    font-family: 'Host Grotesk', Arial, sans-serif;
+}
+
+.thank-you-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007575;
+    margin-bottom: 15px;
+}
+
+.thank-you-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}

@@ -149,4 +149,40 @@
     .gallery .figure {
         text-align: center;
     }
+
+    /*week 04 - Form*/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 40px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    form {
+        flex: 1 1 60%;
+        max-width: 600px;
+    }
+
+    .membership-benefits {
+        flex: 1 1 30%;
+        max-width: 350px;
+    }
+
+    /*thank you page*/
+    .thank-you-container {
+        padding: 30px 40px;
+        max-width: 500px;
+    }
+
+    .thank-you-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .thank-you-container p {
+        font-size: 1.2rem;
+    }
 }
