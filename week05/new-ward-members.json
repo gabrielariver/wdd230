@@ -1,0 +1,38 @@
+{
+    "lastName": "Rivera",
+    "moveInDate": "2009-01-01",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Jorge Rivera",
+            "gender": "Male",
+            "birthDate": "1966-05-19"
+        },
+        {
+            "name": "Isabel Abad",
+            "gender": "Female",
+            "birthDate": "1976-11-22"
+        },
+        {
+            "name": "Andrea Rivera",
+            "gender": "Female",
+            "birthDate": "1995-10-09"
+        },
+        {
+            "name": "Camila Rivera",
+            "gender": "Female",
+            "birthDate": "1998-02-08"
+        },
+        {
+            "name": "Renato Rivera",
+            "gender": "Male",
+            "birthDate": "2000-01-25"
+        },
+        {
+            "name": "Gabriela Rivera",
+            "gender": "Female",
+            "birthDate": "2003-01-03"
+        }
+    ]
+}
