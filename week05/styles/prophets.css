@@ -56,6 +56,12 @@ section h2 {
     color: #533747;
 }
 
+section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.25rem 0;
+}
+
 section img {
     width: 100%;
     max-width: 150px;
