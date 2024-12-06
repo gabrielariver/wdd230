@@ -1,38 +1,60 @@
-
-//last modification
 document.addEventListener("DOMContentLoaded", function () {
     const lastModified = document.lastModified;
     document.getElementById("last-modified").textContent = lastModified;
 });
 
-//hamburguer
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navbar = document.querySelector('.navbar');
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navbar = document.querySelector(".navbar");
 
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navbar.style.display = navbar.style.display === "flex" ? "none" : "flex";
     });
 });
-//last visit
-const lastVisitContainer = document.querySelector(".sidebar");
 
-const currentDate = Date.now();
+const gridViewBtn = document.getElementById("grid-view-btn");
+const listViewBtn = document.getElementById("list-view-btn");
+const directoryContainer = document.getElementById("directory-container");
 
-const lastVisit = localStorage.getItem("lastVisit");
+if (gridViewBtn && listViewBtn && directoryContainer) {
+    gridViewBtn.addEventListener("click", function () {
+        directoryContainer.classList.add("grid-view");
+        directoryContainer.classList.remove("list-view");
+        gridViewBtn.classList.add("active");
+        listViewBtn.classList.remove("active");
+    });
 
-if (!lastVisit) {
-    lastVisitContainer.innerHTML += `<p>Welcome! Let us know if you have any questions.</p>`;
-} else {
-    const daysDifference = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
-    if (daysDifference < 1) {
-        lastVisitContainer.innerHTML += `<p>Back so soon! Awesome!</p>`;
-    } else if (daysDifference === 1) {
-        lastVisitContainer.innerHTML += `<p>You last visited 1 day ago.</p>`;
-    } else {
-        lastVisitContainer.innerHTML += `<p>You last visited ${daysDifference} days ago.</p>`;
-    }
+    listViewBtn.addEventListener("click", function () {
+        directoryContainer.classList.add("list-view");
+        directoryContainer.classList.remove("grid-view");
+        listViewBtn.classList.add("active");
+        gridViewBtn.classList.remove("active");
+    });
 }
 
-localStorage.setItem("lastVisit", currentDate);
+/*Week 05 The Directory Page*/
+fetch("data/members.json")
+    .then((response) => response.json())
+    .then((data) => {
+        renderDirectory(data, directoryContainer);
+    })
+    .catch((error) => console.error("Error loading directory data:", error));
+
+function renderDirectory(members, container) {
+    if (!container) return;
+    container.innerHTML = "";
+    members.forEach((member) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+            <h2>${member.name}</h2>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <a href="${member.website}" target="_blank">Visit Website</a>
+            <p class="membership">${member.membership} Member</p>
+        `;
+        container.appendChild(card);
+    });
+}

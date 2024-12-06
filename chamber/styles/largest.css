@@ -185,4 +185,37 @@
     .thank-you-container p {
         font-size: 1.2rem;
     }
+
+}
+
+/*Week 05 The Directory Page*/
+@media (max-width: 768px) {
+
+    .list-view .card {
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 5px;
+        background-color: #ffffff;
+    }
+
+    .list-view .card h2,
+    .list-view .card p,
+    .list-view .card a {
+        flex: unset;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .list-view .card a {
+        margin-bottom: 0;
+    }
+
+    #directory-container.list-view {
+        gap: 0;
+    }
+
+    .grid-view .card {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
