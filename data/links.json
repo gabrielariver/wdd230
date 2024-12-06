@@ -1,0 +1,52 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "links": [
+          { "url": "#", "title": "Layout" },
+          { "url": "#", "title": "Media Query" },
+          { "url": "#", "title": "JS Pen" }
+        ]
+      },
+      {
+        "week": "Week 02",
+        "links": [
+          { "url": "https://gabrielariver.github.io/wdd230/week02/desing.html", "title": "Web Design Principles" },
+          { "url": "https://codepen.io/Gabriela-Rivera-the-looper/pen/GRVzNbb", "title": "Responsive 'Hamburger' Menu" },
+          { "url": "https://gabrielariver.github.io/wdd230/week02/bom.html", "title": "DOM Manipulation" }
+        ]
+      },
+      {
+        "week": "Week 03",
+        "links": [
+          { "url": "week03/images/landscape.webp", "title": "WebP" },
+          { "url": "https://gabrielariver.github.io/wdd230/week03/lazyload.html", "title": "Lazy Loading" },
+          { "url": "https://gabrielariver.github.io/wdd230/week03/responsive-images.html", "title": "Responsive Images: srcset" },
+          { "url": "https://gabrielariver.github.io/wdd230/week03/bom.html", "title": "Web Storage API - localStorage" }
+        ]
+      },
+      {
+        "week": "Week 04",
+        "links": [
+          { "url": "https://codepen.io/Gabriela-Rivera-the-looper/pen/XJrWgZw?editors=0100", "title": "CSS Pseudo-Classes" },
+          { "url": "week04/images/Combinators.png", "title": "CSS Combinators" },
+          { "url": "https://gabrielariver.github.io/wdd230/week04/tablebuild.html", "title": "Data Presentation" },
+          { "url": "https://gabrielariver.github.io/wdd230/week04/index.html", "title": "HTML Forms" }
+        ]
+      },
+      {
+        "week": "Week 05",
+        "links": [
+          { "url": "https://codepen.io/Gabriela-Rivera-the-looper/pen/emOpMGG", "title": "CSS Pseudo-elements" },
+          { "url": "https://gabrielariver.github.io/wdd230/week05/new-ward-members.json", "title": "JSON" },
+          { "url": "https://gabrielariver.github.io/wdd230/week05/prophets.html", "title": "The Fetch API" },
+          { "url": "https://gabrielariver.github.io/wdd230/week05/weather.html", "title": "Weather API" }
+        ]
+      },
+      {
+        "week": "Week 06",
+        "links": []
+      }
+    ]
+  }
+  

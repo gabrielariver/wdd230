@@ -309,3 +309,63 @@ footer {
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.info-card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e0e0;
+    max-width: 400px;
+    font-family: 'Host Grotesk', sans-serif;
+    text-align: center;
+}
+.info-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #3DCCC7;
+    color: black;
+    padding: 1rem;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+.info-card p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.info-card .weather-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.info-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.dark-mode .info-card {
+    background-color: #333;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .info-card h2 {
+    background-color: #3DCCC7;
+    color: black;
+}
+
+.dark-mode .info-card p {
+    color: #CCCCCC;
+}
+
+.dark-mode .info-card a {
+    color: #07BEB8;
+}
+
+.dark-mode .info-card a:hover {
+    color: #00A8A8;
+}
