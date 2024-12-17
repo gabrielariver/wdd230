@@ -35,8 +35,8 @@
                 <li><a href="https://gabrielariver.github.io/wdd230/chamber/index.html">Home</a></li>
                 <li><a href="https://gabrielariver.github.io/wdd230/chamber/discover.html">Discover</a></li>
                 <li><a href="https://gabrielariver.github.io/wdd230/chamber/directory.html">Directory</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/faq.html" class="active">FAQ</a></li>
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="hamburger" onclick="toggleMenu()">
@@ -77,43 +77,68 @@
     <section class="featured-announcements">
         <div class="announcement">
             <h3>Upcoming Networking Night</h3>
-            <img src="images/event1.jpg" alt="Event 1 Image">
-            <p>Brief description of the actual event or announcement.</p>
+            <br>
+            <img src="images/event1.webp" alt="Event 1 Image">
+            <br>
+            <p>Join us for an evening of networking and connecting with local businesses in the community.</p>
         </div>
         <div class="announcement">
             <h3>Local Business Awards</h3>
-            <img src="images/event2.jpg" alt="Event 2 Image">
-            <p>Brief description of the actual event or announcement.</p>
+            <br>
+            <img src="images/event2.webp" alt="Event 2 Image">
+            <br>
+            <p>Celebrate the achievements of outstanding businesses in our local community.</p>
         </div>
         <div class="announcement">
             <h3>Tech Innovations for Business</h3>
-            <img src="images/event3.jpg" alt="Event 3 Image">
-            <p>Brief description of the future event or announcement.</p>
+            <br>
+            <img src="images/event3.webp" alt="Event 3 Image">
+            <br>
+            <p>Discover the latest technological advancements to drive your business success.</p>
         </div>
         <div class="announcement">
             <h3>Quito Exhibition Center: Upcoming Events</h3>
-            <img src="images/event4.jpg" alt="Event 4 Image">
-            <p>Brief description of the future event or announcement.</p>
+            <br>
+            <img src="images/event4.webp" alt="Event 4 Image">
+            <br>
+            <p>Explore the upcoming business exhibitions and events taking place in Quito.</p>
         </div>
     </section>
 
     <!-- Weather and Featured Company Section -->
     <div class="additional-info">
         <!-- Featured Company Section -->
-        <section class="featured-company">
-            <h3>XYZ Company</h3>
-            <img src="images/featured-company.jpg" alt="Featured Company Image">
-            <p>The best services and products for your needs.</p>
-            <p>Visit our website to learn more!</p>
+        <section id="featured-members">
+            <h3>spotlight</h3>
+            <div id="announcements-container">
+            </div>
         </section>
+
         <!-- Weather Section -->
         <section class="weather-card">
             <h3>Current Weather</h3>
-            <p>Quito, Ecuador</p>
-            <p>Temperature: 18°C</p>
-            <p>Condition: Sunny</p>
+            <p id="current-temp">Temperature: Loading...</p>
+            <img id="weather-icon" src="" alt="Weather icon" style="display:none;">
+            <p id="captionDesc">Condition: Loading...</p>
+            <div class="forecast">
+                <h4>3-Day Forecast</h4>
+                <ul id="forecast-list">
+
+                </ul>
+            </div>
         </section>
+
     </div>
+
+    <div id="invitation-banner">
+        <p>
+            <strong>📢 Special Invitation!</strong><br>
+            The Chamber of Commerce will meet this <strong>Wednesday at 7:00 PM</strong>. <br>
+            We look forward to seeing you!
+        </p>
+        <button id="close-banner" aria-label="Cerrar banner">❌</button>
+    </div>
+
 
     <!-- Footer -->
     <footer class="footer">

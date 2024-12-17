@@ -1,65 +1,65 @@
 [
     {
-        "name": "Idaho Websites",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com",
-        "image": "idaho-websites.png",
+        "name": "Banco Pichincha",
+        "address": "Amazonas Avenue and Pereira St., Banco Pichincha Building, Quito, Ecuador",
+        "phone": "+593-2-299-9999",
+        "website": "https://www.pichincha.com",
+        "image": "banco-pichincha.webp",
         "membership": "Gold",
-        "description": "Specializing in creating responsive websites for small businesses."
+        "description": "The largest private bank in Ecuador, offering a wide range of financial services."
     },
     {
-        "name": "Surge Web Design",
-        "address": "4072 E Arch Drive Meridian ID 83646",
-        "phone": "(208) 631-0640",
-        "website": "https://www.surgewebdesign.com",
-        "image": "surge-web-design.png",
+        "name": "Quicentro Sur",
+        "address": "Av. Moran Valverde and Quitumbe Ñan, Quito, Ecuador",
+        "phone": "+593-2-600-2000",
+        "website": "https://www.quicentrosur.com",
+        "image": "quicentro-sur.webp",
         "membership": "Silver",
-        "description": "Providing innovative web design and branding solutions."
+        "description": "The largest shopping mall in Ecuador, featuring over 350 shops and entertainment facilities."
     },
     {
-        "name": "Graphic Zen",
-        "address": "1788 E Summerplace Court Meridian ID 83646",
-        "phone": "(208) 631-4984",
-        "website": "https://graphiczen.com",
-        "image": "graphic-zen.png",
+        "name": "Ecuador Expat Journeys",
+        "address": "Av. República 13-31 y Alemania, Edificio Álvarez García, Piso 2, Oficina 19, Quito, Ecuador",
+        "phone": "+593-99-297-5679",
+        "website": "https://www.ecuadorexpatjourneys.com",
+        "image": "ecuador-expat-journeys.webp",
         "membership": "Gold",
-        "description": "Offering professional graphic design and creative consulting."
+        "description": "Provides personalized travel experiences for expatriates exploring Ecuador."
     },
     {
-        "name": "Peppershock Media",
-        "address": "1215 3rd Street Nampa ID 83651",
-        "phone": "(208) 461-5070",
-        "website": "https://www.peppershock.com",
-        "image": "peppershock-media.png",
-        "membership": "Silver",
-        "description": "Experts in video production and marketing campaigns."
-    },
-    {
-        "name": "Flash Tech Services",
-        "address": "Star Idaho 83669",
-        "phone": "(208) 488-5810",
-        "website": "https://flashtechnicalservices.com",
-        "image": "flash-tech-services.png",
+        "name": "UIO Station Coworking",
+        "address": "Av. República E7-34 y Pradera, Quito, Ecuador",
+        "phone": "+593-2-250-0446",
+        "website": "https://www.coworker.com/ecuador/quito/uiostation-cooworking",
+        "image": "uio-station-coworking.webp",
         "membership": "Bronze",
-        "description": "Technical services for IT infrastructure and hardware repairs."
+        "description": "Offers modern coworking spaces and office solutions for entrepreneurs and businesses."
     },
     {
-        "name": "Metro Express Car",
-        "address": "1725 E Overland Road Meridian ID 83642",
-        "phone": "(208) 888-4073",
-        "website": "https://www.metroexpresscarwash.com",
-        "image": "metro-express-car.png",
-        "membership": "Gold",
-        "description": "High-quality car washing and detailing services."
+        "name": "Masaya Hostels",
+        "address": "Calle Rocafuerte OE3-97 y Venezuela, Centro Histórico, Quito, Ecuador",
+        "phone": "+593-98-715-9732",
+        "website": "https://www.masaya-experience.com",
+        "image": "masaya-hostels.webp",
+        "membership": "Silver",
+        "description": "Provides boutique hostel accommodations with cultural experiences in the heart of Quito."
     },
     {
-        "name": "Boise Marketing Experts",
-        "address": "300 E Idaho Street Boise ID 83712",
-        "phone": "(208) 555-7890",
-        "website": "https://www.boise-marketing.com",
-        "image": "boise-marketing-experts.png",
-        "membership": "Platinum",
-        "description": "Providing marketing strategy and SEO services for startups."
+        "name": "Larm Relocation Ecuador",
+        "address": "Av. Shyris N32-218 y Eloy Alfaro, Edificio Parque Central, Oficina 708, Quito, Ecuador",
+        "phone": "+593-98-704-9671",
+        "website": "https://www.larmgroup.com",
+        "image": "larm-relocation-ecuador.webp",
+        "membership": "Bronze",
+        "description": "Offers comprehensive relocation services for individuals and companies moving to Ecuador."
+    },
+    {
+        "name": "Ecoventour",
+        "address": "Av. Hurtado de Mendoza y Bulán, Quito, Ecuador",
+        "phone": "+593-98-931-3366",
+        "website": "https://www.ecoventour.com",
+        "image": "ecoventour.webp",
+        "membership": "Bronze",
+        "description": "Specializes in eco-friendly tours and travel packages throughout Ecuador."
     }
 ]
