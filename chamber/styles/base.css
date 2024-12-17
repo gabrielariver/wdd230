@@ -778,7 +778,7 @@ form button:hover {
 
 .faq-question {
     background-color: #00B9B9;
-    color: white;
+    color: rgb(14, 13, 13);
     border: none;
     width: 100%;
     text-align: left;
@@ -861,7 +861,7 @@ textarea {
 
 .submit-button {
     background-color: #00B9B9;
-    color: white;
+    color: rgb(13, 12, 12);
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
