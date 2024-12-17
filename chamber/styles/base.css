@@ -652,7 +652,7 @@ form button:hover {
 
 #invitation-banner {
     background-color: #00B9B9;
-    color: #ffffff;
+    color: black;
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -662,7 +662,7 @@ form button:hover {
     max-width: 1200px;
     border: 2px solid #007575;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(237, 233, 233, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -679,8 +679,8 @@ form button:hover {
 
 #close-banner {
     background-color: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #080707;
+    color: black;
     font-size: 1.2rem;
     cursor: pointer;
     padding: 5px 10px;
@@ -689,7 +689,7 @@ form button:hover {
 }
 
 #close-banner:hover {
-    background-color: #ffffff;
+    background-color: black;
     color: #00B9B9;
     transform: scale(1.1);
 }
@@ -739,7 +739,7 @@ form button:hover {
 }
 
 .announcement-card a {
-    color: #00B9B9;
+    color: #090a0a;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
@@ -812,7 +812,7 @@ form button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    min-height: 85vh;
     max-width: 100%;
     margin: 0;
     padding: 20px;
