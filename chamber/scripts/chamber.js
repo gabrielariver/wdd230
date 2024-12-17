@@ -1,6 +1,6 @@
 // Last Visit Logic
 document.addEventListener("DOMContentLoaded", () => {
-    const lastVisitContainer = document.querySelector(".sidebar");
+    const lastVisitContainer = document.querySelector(".last-visit-message");
     const currentDate = Date.now();
 
     const lastVisit = localStorage.getItem("lastVisit");
