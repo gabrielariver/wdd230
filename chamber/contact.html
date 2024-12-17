@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Contact Us</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce, connecting local businesses for success.">
+    <meta name="author" content="Gabriela Rivera">
+    <meta property="og:title" content="Gabriela Rivera - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore the Quito Community Chamber of Commerce, where innovation meets with and for the community.
+        We empower local businesses, foster connections, and drive success through technology.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f8/Quito.jpg">
+    <meta property="og:url" content="https://gabrielariver.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="https://gabrielariver.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Our Information</h2>
+                <p><strong>Address:</strong> Av. Amazonas 1234, Quito, Ecuador</p>
+                <p><strong>Email:</strong> gabrielariv301@gmail.com</p>
+                <p><strong>Phone:</strong> +593 963 316 103</p>
+                <p><strong>Follow Us:</strong></p>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact: <a href="mailto:gabrielariv301@gmail.com">gabrielariv301@gmail.com</a></p>
+        <p>Gabriela Elizabeth Rivera Abad | WDD 230</p>
+        <p>Last modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
